@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <tittle> Crystal game</tittle>
+        <!-- <tittle> Crystal game</tittle> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
     <body>
@@ -18,37 +18,36 @@
         <h1 class="text-center alert alert-secondary" role="alert">Crystal Game</h1>
             
         </div> -->
+        
+        <!-- The random number goes here -->
 
-        <div class="container-fluid text-center alert alert-primary">
-            <h3>the random number goes here</h3>
+        <div  class="container-fluid text-center alert alert-primary" >
+            <h1 id="randomNumber" height="150" width="150"></h1>
+            
         </div>
         
         <div class="row">
-            <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                <h2>crystal-1</h2>
-                <h3 id = crystal-1></h3>
+            <div  class="col-sm p-3 mb-2 bg-info text-white text-center" style="max-width: 33%" style= "align-items: center">
+                <button id = crystal-0   class="btn btn-lg px-6 btn-outline-dark"><img src="C:\Users\stonep3\!Coding\HW\unit-4-game\assets\images\crystal_1.jpg" height="150" width="150"></button>
             </div>
     
-            <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                <h2>crystal-2</h2>
-                <h3 id = crystal-2></h3>
+            <div  class="col-sm p-3 mb-2 bg-info text-white text-center" style="max-width: 33%" style= "align-items: center">
+                <button id = crystal-1   class="btn btn-lg px-6 btn-outline-dark"><img src="C:\Users\stonep3\!Coding\HW\unit-4-game\assets\images\crystal_2.jpg" height="150" width="150"></button>
             </div>
     
-            <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                <h2>crystal-3</h2>
-                <h3 id = crystal-3></h3>
+            <div  class="col-sm p-3 mb-2 bg-info text-white text-center" style="max-width: 33%" style= "align-items: center">
+                <button id = crystal-2   class="btn btn-lg px-6 btn-outline-dark"><img src="C:\Users\stonep3\!Coding\HW\unit-4-game\assets\images\crystal_3.jpg" height="150" width="150"></button>
             </div>
 
-            <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                <h2>crystal-4</h2>
-                <h3 id = crystal-4></h3>
+            <div  class="col-sm p-3 mb-2 bg-info text-white text-center" style="max-width: 33%" style= "align-items: center">
+                <button id = crystal-3   class="btn btn-lg px-6 btn-outline-dark"><img src="C:\Users\stonep3\!Coding\HW\unit-4-game\assets\images\crystal_4.jpg" height="150" width="150"></button>
             </div>
     
         </div>
 
         <div class="row">
             <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                <h2>Wins</h2>
+                <h2>Wins: </h2>
                 <h3 id = win></h3>
              </div>
 
@@ -58,7 +57,7 @@
              </div>
 
              <div  class="col-sm p-3 mb-2 bg-info text-white" style="max-width: 33%" style= "align-items: center">
-                    <h2>Losses</h2>
+                    <h2>Losses: </h2>
                     <h3 id = loss></h3>
             </div>
 
