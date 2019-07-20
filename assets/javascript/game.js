@@ -2,12 +2,11 @@ $(document).ready(function(){
  generatedNumber = (Math.floor(Math.random() * (120 - 19 + 1)) + 19 );
     $("#randomNumber").text(generatedNumber);
 
-var  counter = 0;
+var counter = 0;
 var crystalRandom = [];
 var crystal1 = 0;
-// // var crystal2 = 0;
-// // var crystal3 = 0;
-// // var crystal4 = 0;
+var wins = 0;
+var losses = 0;
 
 function generateCrystalNumbers (){
     for (i= 0; i < 4; i++){
@@ -19,6 +18,8 @@ function generateCrystalNumbers (){
 }
 
 generateCrystalNumbers();
+
+
 
 $(console.log(crystalRandom))
 
@@ -42,12 +43,27 @@ $(console.log(crystal4))
 
 
 $(".btn").on("click",function() {
-    $(console.log(counter))
-    // $(console.log(crystalValue))
+    
+    
     var crystalValue = ($(this).attr("data-crystalvalue"));
     $(console.log(crystalValue = parseInt(crystalValue)));
 
+    counter += crystalValue;
+    $(console.log(counter));
+
+    $("#userNumber").text(counter);
+
+    if (counter === generatedNumber) {
+        $("#message").text("You won!");
+        wins++
+    }
     
+    else if ( counter >= generatedNumber) {
+        $("#message").text("You lose!");
+        losses++
+    }
+
+
 
 });
 
