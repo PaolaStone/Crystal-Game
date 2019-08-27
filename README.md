@@ -1,4 +1,4 @@
-# unit-4-game (Crystal game)
+# Crystal game
 
 This is made using basic jquery.
 
