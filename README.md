@@ -1,6 +1,6 @@
 # Crystal game
 
-How much do you know about them? Test it here!
+How good is your math? Test it here!
 
 Play now at https://paolastone.github.io/Crystal-Game/
 
